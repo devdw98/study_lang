@@ -160,23 +160,26 @@ public class Ex04Main {
             System.out.println(n+"은 회문수가 아닙니다.");
     }
     public static void main(String[] args) {
-//        System.out.println("[4-2] " + ex02());
-//        System.out.println("[4-3] " + ex03());
-//        System.out.println("[4-4] " + ex04());
-//        System.out.println("[4-5] " );
-//        ex05();
-//        System.out.println("[4-6] " );
-//        ex06();
-//        System.out.println("[4-7] " );
-//        ex07();
-//        ex08();
-//        System.out.println("[4-9] " +ex09("12345"));
-//        System.out.println("[4-10] " + ex10(12345));
-//        System.out.println("[4-11] ");
-//        ex11();
+        System.out.println("[4-2] " + ex02());
+        System.out.println("[4-3] " + ex03());
+        System.out.println("[4-4] " + ex04());
+        System.out.println("[4-5] " );
+        ex05();
+        System.out.println("[4-6] " );
+        ex06();
+        System.out.println("[4-7] " );
+        ex07();
+        ex08();
+        System.out.println("[4-9] " +ex09("12345"));
+        System.out.println("[4-10] " + ex10(12345));
+        System.out.println("[4-11] ");
+        ex11();
+        System.out.println("[4-12] ");
         ex12();
-//        ex13("1234");
-//        System.out.println("[4-13] "+ex14());
-//        ex15(12321);
+        System.out.println("[4-13] ");
+        ex13("1234");
+        System.out.println("[4-14] "+ex14());
+        System.out.println("[4-15] ");
+        ex15(12321);
     }
 }
