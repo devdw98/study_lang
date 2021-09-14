@@ -56,15 +56,22 @@ void Marine::show_status()
 
 int main()
 {
-    Marine marine1(2, 3);
-    Marine marine2(3, 5);
+    Marine *marines[100];
 
-    marine1.show_status();
-    marine2.show_status();
+    // 동적으로 메모리 할당
+    marines[0] = new Marine(2, 3);
+    marines[1] = new Marine(3, 5);
+
+    marines[0]->show_status();
+    marines[1]->show_status();
 
     std::cout << std::endl
               << "마린 1이 마린 2ㅣ 공격!" << std::endl;
-    marine2.be_attacked(marine1.attack());
-    marine1.show_status();
-    marine2.show_status();
+    marines[1]->be_attacked(marines[0]->attack());
+    marines[0]->show_status();
+    marines[1]->show_status();
+
+    // 동적 할당한 메모리 해제
+    delete marines[0];
+    delete marines[1];
 }
